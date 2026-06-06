@@ -1,0 +1,27 @@
+# 참고자료
+
+발표자료에서 정책 제안과 정신건강 예방 전략의 근거로 활용한 자료입니다. 공개 전 제목·발행연도·DOI 또는 공식 저장소 링크를 다시 확인했습니다.
+
+## 정책 및 제도
+
+- 이요셉, 김상현, 예례미, 김명화. (2021). **[정신질환 수가체계 개선 방안](https://repository.hira.or.kr/handle/2019.oak/3056)**. 건강보험심사평가원. 발간등록번호 `G000F8L-2021-146`.
+  - 보고서의 대만·호주 정신질환 수가 및 서비스 제공체계 사례를 정책 아이디어 탐색에 참고했습니다.
+
+## 치료 참여 및 인센티브
+
+- Bradley, C. J., & Saunders, H. G. (2020). **[Impact of cash incentives for low-income individuals to seek a primary care visit on mental health outcomes: Evidence from a randomized controlled trial](https://pubmed.ncbi.nlm.nih.gov/33221071/)**. *Social Science & Medicine, 265*, 113515. DOI: [10.1016/j.socscimed.2020.113515](https://doi.org/10.1016/j.socscimed.2020.113515)
+- Empower EMR. **[Patient Engagement in Healthcare: How It Impacts PT Recovery](https://www.empoweremr.com/categories/patient-care)**.
+  - 상업 웹 콘텐츠는 정책 효과의 직접 근거가 아니라 환자 참여 개념을 이해하기 위한 보조 사례로만 활용했습니다.
+
+## 정신건강과 신체활동
+
+- Ströhle, A., et al. (2000). **[Increased ACTH concentrations associated with cholecystokinin tetrapeptide-induced panic attacks in patients with panic disorder](https://doi.org/10.1016/S0893-133X(99)00115-3)**. *Neuropsychopharmacology, 22*(3), 251-256.
+- Dressle, R. J., et al. (2022). **[HPA axis activity in patients with chronic insomnia: A systematic review and meta-analysis of case-control studies](https://pubmed.ncbi.nlm.nih.gov/35091194/)**. *Sleep Medicine Reviews, 62*, 101588. DOI: [10.1016/j.smrv.2022.101588](https://doi.org/10.1016/j.smrv.2022.101588)
+- De Nys, L., et al. (2022). **[The effects of physical activity on cortisol and sleep: A systematic review and meta-analysis](https://doi.org/10.1016/j.psyneuen.2022.105843)**. *Psychoneuroendocrinology, 143*, 105843.
+- Chen, et al. (2025). **[Glymphatic dysfunction associated with cortisol dysregulation in major depressive disorder](https://doi.org/10.1038/s41398-025-03486-1)**. *Translational Psychiatry*.
+
+## 프로젝트 산출물
+
+- [최종 발표자료](presentation.pdf)
+
+> 참고문헌은 정책 아이디어의 배경 근거입니다. 본 프로젝트의 청구자료 분석만으로 생물학적 기전이나 정책의 인과적 효과를 입증한 것은 아닙니다.

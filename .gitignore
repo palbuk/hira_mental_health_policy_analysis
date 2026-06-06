@@ -1,0 +1,16 @@
+# Private or large healthcare data
+*.csv
+*.sas7bdat
+*.zip
+*.xls
+*.xlsx
+*.hwp
+
+# Local outputs
+outputs/
+__pycache__/
+*.py[cod]
+
+# OS files
+.DS_Store
+Thumbs.db
