@@ -35,20 +35,20 @@ def numeric(value: str | None) -> float:
 
 def read_claim_summary(path: Path) -> dict[str, Any]:
     rows = 0
-    patients: set[str] = set()
+    claims: set[str] = set()
     total_cost = 0.0
     self_pay = 0.0
 
     with path.open(encoding="utf-8-sig", newline="") as file:
         for record in csv.DictReader(file):
             rows += 1
-            patients.add(record["MID"])
+            claims.add(record["MID"])
             total_cost += numeric(record.get("RVD_RPE_TAMT_AMT"))
             self_pay += numeric(record.get("RVD_SLF_BRDN_AMT"))
 
     return {
         "records": rows,
-        "patients": len(patients),
+        "claims": len(claims),
         "total_cost": round(total_cost),
         "self_pay": round(self_pay),
         "average_total_cost_per_record": round(total_cost / rows, 2),
@@ -58,23 +58,23 @@ def read_claim_summary(path: Path) -> dict[str, Any]:
 
 def read_medication_summary(path: Path) -> dict[str, Any]:
     rows = 0
-    patients: set[str] = set()
+    claims: set[str] = set()
     amount = 0.0
     administration_days = 0.0
 
     with path.open(encoding="utf-8-sig", newline="") as file:
         for record in csv.DictReader(file):
             rows += 1
-            patients.add(record["MID"])
+            claims.add(record["MID"])
             amount += numeric(record.get("AMT"))
             administration_days += numeric(record.get("TOT_INJC_DDCNT_EXEC_FQ"))
 
     return {
         "records": rows,
-        "patients": len(patients),
+        "claims": len(claims),
         "total_medication_cost": round(amount),
         "total_administration_days": round(administration_days, 2),
-        "medication_cost_per_patient": round(amount / len(patients), 2),
+        "medication_cost_per_claim": round(amount / len(claims), 2),
     }
 
 
@@ -114,13 +114,13 @@ def build_summary(data_root: Path) -> dict[str, Any]:
             claims["mental_health"]["average_self_pay_per_record"],
             claims["comparison"]["average_self_pay_per_record"],
         ),
-        "hospital_medication_cost_per_patient_ratio": ratio(
-            medication["hospital"]["mental_health"]["medication_cost_per_patient"],
-            medication["hospital"]["comparison"]["medication_cost_per_patient"],
+        "hospital_medication_cost_per_claim_ratio": ratio(
+            medication["hospital"]["mental_health"]["medication_cost_per_claim"],
+            medication["hospital"]["comparison"]["medication_cost_per_claim"],
         ),
-        "pharmacy_medication_cost_per_patient_ratio": ratio(
-            medication["pharmacy"]["mental_health"]["medication_cost_per_patient"],
-            medication["pharmacy"]["comparison"]["medication_cost_per_patient"],
+        "pharmacy_medication_cost_per_claim_ratio": ratio(
+            medication["pharmacy"]["mental_health"]["medication_cost_per_claim"],
+            medication["pharmacy"]["comparison"]["medication_cost_per_claim"],
         ),
     }
 
